@@ -3,69 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Barkhaus | Where Dogs and Their Humans Belong</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <title>Barkhaus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: 'Inter', sans-serif;
-      color: #1a1a1a;
-      background: #fefefe;
+    }
+    body {
+      line-height: 1.6;
+      color: #222;
     }
     header {
-      background: #ffffff;
-      padding: 20px 40px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #eaeaea;
+      padding: 1rem 2rem;
+      z-index: 1000;
+    }
+    header img {
+      height: 40px;
     }
     nav a {
-      margin: 0 15px;
+      margin-left: 1.5rem;
       text-decoration: none;
       color: #333;
-      font-weight: 500;
+      font-weight: 600;
     }
     .hero {
+      height: 100vh;
+      background: url('hero-image.jpg') center/cover no-repeat;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 100px 20px;
-      background: #f8f8f8;
-    }
-    .hero img {
-      max-width: 150px;
-      margin-bottom: 20px;
+      color: white;
+      padding: 2rem;
     }
     .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+      font-size: 3rem;
+      background: rgba(0,0,0,0.4);
+      padding: 1rem 2rem;
+      border-radius: 12px;
     }
-    .hero p {
-      font-size: 1.25rem;
-      color: #555;
+    section {
+      padding: 5rem 2rem;
+      max-width: 1000px;
+      margin: auto;
     }
-    .section {
-      padding: 60px 20px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .section h2 {
+    section h2 {
       font-size: 2rem;
-      margin-bottom: 20px;
+      margin-bottom: 1rem;
+    }
+    section p {
+      font-size: 1.1rem;
+      color: #444;
     }
     footer {
-      background: #222;
-      color: white;
+      background: #f7f7f7;
       text-align: center;
-      padding: 30px 20px;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="your-barkhaus-logo.png" alt="Barkhaus Logo" height="40" />
+    <img src="barkhaus-logo.png" alt="Barkhaus Logo">
     <nav>
       <a href="#about">About</a>
       <a href="#membership">Membership</a>
@@ -75,29 +89,26 @@
   </header>
 
   <section class="hero">
-    <img src="your-barkhaus-logo.png" alt="Barkhaus Logo" />
-    <h1>Where Dogs and Their Humans Belong</h1>
-    <p>A social club for dogs and their people. Coming soon.</p>
+    <h1>Where Dogs & People Come to Play</h1>
   </section>
 
-  <section class="section" id="about">
+  <section id="about">
     <h2>About Barkhaus</h2>
-    <p>Barkhaus is a members-only social club designed for dog lovers and their furry companions. It’s a space where community, play, and connection all come together in a curated, dog-friendly environment.</p>
+    <p>Barkhaus is a community-first dog social club — a place where humans and pups alike can connect, unwind, and enjoy curated experiences. Whether you're grabbing a drink, attending an event, or just socializing, Barkhaus is your dog's new favorite place (and yours too).</p>
   </section>
 
-  <section class="section" id="membership">
+  <section id="membership">
     <h2>Membership</h2>
-    <p>Join Barkhaus to access our private dog park, curated events, member perks, and exclusive community experiences. Memberships will be opening soon — stay tuned!</p>
+    <p>We offer flexible plans for every kind of pup parent. Enjoy unlimited access, exclusive member events, and perks from our partners. Join the Barkhaus family today.</p>
   </section>
 
-  <section class="section" id="events">
+  <section id="events">
     <h2>Events</h2>
-    <p>From dog yoga to breed meetups, Barkhaus hosts events that bring pups and people together. Full calendar coming soon!</p>
+    <p>From puppy yoga to dog-friendly movie nights, Barkhaus events are designed to bring the community together. Check back regularly or follow us on Instagram for updates.</p>
   </section>
 
   <footer id="contact">
-    <p>Contact us: hello@barkhaus.co</p>
-    <p>© 2025 Barkhaus. All rights reserved.</p>
+    <p>© 2025 Barkhaus | Contact us at <a href="mailto:hello@barkhaus.co">hello@barkhaus.co</a></p>
   </footer>
 </body>
 </html>
